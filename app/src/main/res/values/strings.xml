@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">""My Debug Application""</string>
+    <string name="navigation_drawer_open">"Open navigation drawer"</string>
+    <string name="navigation_drawer_close">"Close navigation drawer"</string>
+
+    <string name="nav_header_title">"Android Debug Tool Test"</string>
+    <string name="nav_header_desc">"Navigation header"</string>
+
+    <string name="navigation_drawer_group_title">"Debug Tools"</string>
+    <string name="navigation_drawer_telescope">"Telescope"</string>
+    <string name="navigation_drawer_debug_drawer">"DebugDrawer"</string>
+
+    <string name="vibrate_on">"Turn on vibrate"</string>
+    <string name="vibrate_off">"Turn off vibrate"</string>
+    <string name="fingers_count2">"2 fingers"</string>
+    <string name="fingers_count3">"3 fingers"</string>
+    <string name="fingers_count4">"4 fingers"</string>
+    <string name="fingers_count5">"5 fingers"</string>
+</resources>

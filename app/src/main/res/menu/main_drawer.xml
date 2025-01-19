@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/navigation_drawer_group_title">
+        <menu>
+            <item
+                android:id="@+id/navigation_telescope"
+                android:icon="@android:drawable/ic_menu_manage"
+                android:title="@string/navigation_drawer_telescope" />
+            <item
+                android:id="@+id/navigation_debug_drawer"
+                android:icon="@android:drawable/ic_menu_manage"
+                android:title="@string/navigation_drawer_debug_drawer" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+    compileSdk 35
+    namespace "com.myjb.dev"
+
+    defaultConfig {
+        applicationId "com.myjb.dev.mydebugapplication"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17.toString()
+    }
+
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+        buildConfig = true
+    }
+}
+
+dependencies {
+    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("androidx.core:core-ktx:1.15.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.2.0")
+    implementation("androidx.coordinatorlayout:coordinatorlayout:1.2.0")
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
+
+    implementation("com.google.android.material:material:1.12.0")
+
+    implementation('com.facebook.stetho:stetho:1.6.0')
+    implementation('com.facebook.stetho:stetho-okhttp3:1.6.0')
+
+    // Leakcanary (Memory Leak Debug Tool) : https://square.github.io/leakcanary
+    debugImplementation("com.squareup.leakcanary:leakcanary-android:2.14")
+
+    // Telescope (Screenshot + Device Information Debug Tool) : https://github.com/mattprecious/telescope
+    implementation("com.mattprecious.telescope:telescope:2.4.0")
+
+    // DebugDrawer (Multi Debug Tool) : https://github.com/palaima/DebugDrawer
+    implementation("io.palaima.debugdrawer:debugdrawer-base:0.8.0")
+    debugImplementation("io.palaima.debugdrawer:debugdrawer:0.8.0")
+    releaseImplementation("io.palaima.debugdrawer:debugdrawer-no-op:0.8.0")
+
+    debugImplementation("io.palaima.debugdrawer:debugdrawer-view:0.8.0")
+    implementation("io.palaima.debugdrawer:debugdrawer-commons:0.8.0")
+
+    implementation("io.palaima.debugdrawer:debugdrawer-actions:0.8.0")
+
+    implementation("com.jakewharton.scalpel:scalpel:1.1.2")
+    implementation("io.palaima.debugdrawer:debugdrawer-scalpel:0.8.0")
+
+    implementation('com.jakewharton.timber:timber:5.0.1')
+    implementation("io.palaima.debugdrawer:debugdrawer-timber:0.8.0")
+
+    implementation("jp.wasabeef:takt:2.1.1")
+    implementation("io.palaima.debugdrawer:debugdrawer-fps:0.8.0")
+
+    implementation('com.github.pedrovgs:lynx:1.6')
+    debugImplementation("com.readystatesoftware.chuck:library:1.1.0")
+    releaseImplementation("com.readystatesoftware.chuck:library-no-op:1.1.0")
+    implementation("io.palaima.debugdrawer:debugdrawer-logs:0.8.0")
+
+    implementation("io.palaima.debugdrawer:debugdrawer-network-quality:0.8.0")
+}

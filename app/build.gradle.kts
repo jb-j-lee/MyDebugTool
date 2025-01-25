@@ -75,7 +75,7 @@ dependencies {
     // Telescope (Screenshot + Device Information Debug Tool) : https://github.com/mattprecious/telescope
     implementation(libs.telescope)
 
-    // DebugDrawer (Multi Debug Tool) : https://github.com/palaima/DebugDrawer
+    // DebugDrawer (Multi Debug Tool) : https://github.com/lenguyenthanh/DebugDrawer
     implementation(libs.debugdrawer.base)
 
     debugImplementation(libs.debugdrawer)

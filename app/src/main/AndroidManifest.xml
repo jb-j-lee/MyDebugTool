@@ -35,5 +35,15 @@
             android:name=".activity.TelescopeActivity"
             android:label="@string/navigation_drawer_telescope"
             android:parentActivityName="com.myjb.dev.activity.MainActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
     </application>
 </manifest>

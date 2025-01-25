@@ -20,6 +20,7 @@ import io.palaima.debugdrawer.scalpel.ScalpelModule
 import io.palaima.debugdrawer.timber.TimberModule
 import jp.wasabeef.takt.Seat
 import jp.wasabeef.takt.Takt
+import timber.log.Timber
 
 class DebugDrawerActivity : AppCompatActivity() {
     private val binding by lazy {
@@ -35,6 +36,8 @@ class DebugDrawerActivity : AppCompatActivity() {
     }
 
     private fun enableDebugDrawable() {
+        Timber.e("enableDebugDrawable")
+
         val switchAction = SwitchAction("Test switch") {
             Toast.makeText(this, "Switch checked", Toast.LENGTH_LONG).show()
         }
@@ -60,7 +63,7 @@ class DebugDrawerActivity : AppCompatActivity() {
             ScalpelModule(this),
 
             LogsModule(),
-            TimberModule(),
+            TimberModule(application.packageName + ".provider"),
 
             SettingsModule(),
 

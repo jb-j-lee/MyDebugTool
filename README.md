@@ -29,8 +29,7 @@ Debug Tool 에 대한 예제 입니다.
 
 # UI
 
-- MyDebugApplication
-  implements [StrictMode](https://developer.android.com/reference/android/os/StrictMode)
+- MyDebugApplication implements [StrictMode](https://developer.android.com/reference/android/os/StrictMode)
 - TelescopeActivity implements [Telescope](https://github.com/mattprecious/telescope)
 - DebugDrawerActivity implements [DebugDrawer](https://github.com/palaima/DebugDrawer)
 
@@ -38,8 +37,7 @@ Debug Tool 에 대한 예제 입니다.
 # 3rd Party Libraries
 
 - [Leakcanary](https://square.github.io/leakcanary) (Memory Leak Debug Tool)
-- [Telescope](https://github.com/mattprecious/telescope) (ScreenCapture + Device Information Debug
-  Tool)
+- [Telescope](https://github.com/mattprecious/telescope) (ScreenCapture + Device Information Debug Tool)
 - [DebugDrawer](https://github.com/palaima/DebugDrawer) (Multi Debug Tool)
 
 # Build Dependency

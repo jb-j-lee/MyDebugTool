@@ -18,7 +18,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/ic_appwidget_web" />
+            android:src="@drawable/ic_launcher_web" />
     </com.mattprecious.telescope.TelescopeLayout>
 
     <ToggleButton
